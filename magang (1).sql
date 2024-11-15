@@ -342,7 +342,7 @@ CREATE TABLE `order` (
   `kdUser` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
-  `tgl_Jual` date NOT NULL DEFAULT current_timestamp()
+  `tgl_Jual` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -488,7 +488,7 @@ CREATE TABLE `tabelrealpenjualan` (
   `jmlhJual` int(11) NOT NULL,
   `hrgJual` double NOT NULL,
   `hrgBeli` double NOT NULL,
-  `tgl_jual` date NOT NULL DEFAULT current_timestamp(),
+  `tgl_jual` timestamp NOT NULL DEFAULT current_timestamp(),
   `status` int(11) NOT NULL DEFAULT 3
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
